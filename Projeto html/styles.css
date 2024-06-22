@@ -1,0 +1,146 @@
+body {
+    background-image: linear-gradient(270deg, #1c0359 0%, #020048 50%, #000048 100%);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: linear-gradient(270deg, #1c0359 0%, #020048 50%, #000048 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 52px;
+}
+
+.logo-texto {
+    color: white;
+    margin-left: 20px;
+    text-shadow: black 0.1em 0.1em 0.6em;
+}
+
+.logo-texto h2:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 1rem white);
+}
+
+.menu {
+    margin-right: 20px;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.menu li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: black 0.1em 0.1em 0.6em;
+}
+.menu li a:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 1rem white);
+}
+
+.content {
+    margin: 3% auto;
+    text-align: center;
+}
+
+.nome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nome h1 {
+    font-size: 135px;
+    margin: 0;
+    font-style: normal;
+    text-shadow: 0.1em 0.1em 0.8em rgb(255, 255, 255);        
+}
+
+#redes-sociais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; 
+    margin-bottom: 20px;
+}
+
+#redes-sociais a {
+    margin: 0 10px;
+}
+
+#redes-sociais img {
+    width: 80px; 
+    height: auto;
+}
+
+/* redes sociais */
+.linkedin a:hover{
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 1rem #0000cd);
+}
+.github a:hover{
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 1rem white);
+}
+
+#habilidades {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; 
+}
+
+#habilidades img {
+    width: 80px; 
+    height: auto;
+    margin: 0 10px; 
+}
+
+/* habilidades */
+.html img:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 1rem orange);
+}
+
+.css img:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 1rem #0000cd);
+}
+
+.js img:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 1rem yellow);
+}
+
+.vs img:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 1rem blue);
+}
+
+#neves {
+    font-size: 135px; 
+    margin-top: 20px; 
+    text-shadow: 0.1em 0.1em 0.8em rgb(255, 255, 255);        
+}
+
+/* Adicione media queries conforme necessário para ajustes de responsividade */
+@media (max-width: 768px) {
+    .nome h1 {
+        font-size: 80px;
+    }
+    #neves {
+        font-size: 70px;
+    }
+}
