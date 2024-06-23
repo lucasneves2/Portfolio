@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
-            background: linear-gradient(to right, #4b0082 90%, #5a035a);
+            background: linear-gradient(90deg, #0c0a2d 0%, #180d3b 70%, #2c0f5a 100%);
             color: white;
             margin: 0;
             padding: 0;
@@ -25,54 +25,78 @@
         }
 
         .contato {
-            background-color: rgba(255, 255, 255, 0.144); 
             border-radius: 8px;
             padding: 20px;
             margin-top: 20px;
             text-align: left;
         }
 
-        .contato h2 {
-            color: white;
-            margin-top: 0;
+        .info-group {
+            background-color: rgba(255, 255, 255, 0.15); 
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px; 
+            transition: background-color 0.3s; 
+        }
+
+        .info-group-alt {
+            background-color: rgba(255, 255, 255, 0.15); 
+            transition: background-color 0.3s; 
+        }
+
+        /* Estilo de hover para as caixas info-group e info-group-alt */
+        .info-group:hover, .info-group-alt:hover {
+            background-color: rgba(255, 255, 255, 0.3);     
         }
 
         .contato p {
             margin: 5px 0;
-        }
-        .botao-voltar {
-            margin-top: 20px;
-        }
-
-        .botao-voltar a {
-            background-color: #8812dd;
             color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 4px;
         }
 
-        .botao-voltar a:hover {
-            background-color: violet    ;
+        .contato a {
+            color: white; 
+            text-decoration: none; 
+            transition: color 0.3s; 
         }
+
+        .info-group-alt a:hover {  
+            color: rgb(25, 0, 255); 
+        }
+
+        /* Estilos específicos para os links de contato */
+        .contato p strong {
+            color: #4da2d9; 
+        }
+
+  
+
     </style>
 </head>
 <body>
+
     <div class="container">
+    
         <header>
-            <h1>Entre em Contato Conosco</h1>
+            <h1>Contato</h1>
         </header>
         
-        <section class="contato">
-            <h2>Informações de Contato</h2>
-            <p><strong>Telefone:</strong> (11) 94634-9406</p>
-            <p><strong>E-mail:</strong> neveslucas889@gmail.com</p>
-        </section>
-
-        <div class="botao-voltar">
-            <a href="index.html">Voltar à Página Principal</a>
-        </div>
-
+        <main>
+            <section class="contato">
+                <h2>Informações de Contato</h2>
+                <div class="info-group">
+                    <p><strong>Telefone:</strong> (11) 94634-9406</p>
+                    <p><strong>E-mail:</strong> neveslucas889@gmail.com</p>
+                </div>
+                <div class="info-group info-group-alt">
+                    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/lucas-neves-61842824a/" target="_blank" rel="noopener noreferrer">Lucas Neves</a></p>
+                    <p><strong>GitHub:</strong> <a href="https://github.com/lucasneves2" target="_blank" rel="noopener noreferrer">lucasneves2</a></p>
+                </div>
+            </section>
+            
+        </main>
+    
     </div>
+    
 </body>
 </html>
